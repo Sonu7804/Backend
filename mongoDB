@@ -49,3 +49,211 @@ newdb> db.students.find({name : 'Sonu'});
     ip: '121.23.45.96'
   }
 ]
+
+
+
+
+newdb>  db.students.find({name : /S.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b717'),
+    name: 'Shubhum',
+    hobby: 'Singing'
+  }
+]
+newdb>  db.students.find({name : /V.*/});
+
+newdb> db.students.find({name : /S.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b717'),
+    name: 'Shubhum',
+    hobby: 'Singing'
+  }
+]
+
+newdb>
+
+newdb> db.students.find({name : /K.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  }
+]
+newdb> db.students.find({name : /S.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b717'),
+    name: 'Shubhum',
+    hobby: 'Singing'
+  }
+]
+newdb> db.students.find({name : /K.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  }
+]
+newdb> db.students.find({name : /K.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  }
+]
+newdb> db.students.find({name : /K.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  }
+]
+newdb> db.students.find({name : /K.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  }
+]
+newdb> db.students.find({name : /K.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  }
+]
+newdb> db.students.find({name : /K.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  }
+]
+newdb>  db.students.find({name : /K.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  }
+]
+newdb> db.students.find({name : /S.*/});
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b717'),
+    name: 'Shubhum',
+    hobby: 'Singing'
+  }
+]
+newdb> db.students.find();
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b717'),
+    name: 'Shubhum',
+    hobby: 'Singing'
+  }
+]
+newdb> db.students.find().limit(2);
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  }
+]
+newdb> db.students.find().pretty();
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b717'),
+    name: 'Shubhum',
+    hobby: 'Singing'
+  }
