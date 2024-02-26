@@ -1,0 +1,51 @@
+
+newdb> var  user = {
+... name : "Sonu Kushwaha",
+... ip : "127.0.0.1",
+... LastLoginTime : 23456787654
+... };
+
+newdb> user;
+{ name: 'Sonu Kushwaha', ip: '127.0.0.1', LastLoginTime: 23456787654 }
+newdb> db.students.insertOne(user);
+{
+  acknowledged: true,
+  insertedId: ObjectId('65dc6241af5d8a73d041b715')
+newdb> db.students.insertMany([{name : "Sonu" , ip : '121.23.45.96'} , {name : "Shubhum" , hobby : "S
+inging"}]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('65dc635baf5d8a73d041b716'),
+    '1': ObjectId('65dc635baf5d8a73d041b717')
+  }
+}
+newdb> show collections;
+students
+newdb> db.students.find();
+[
+  {
+    _id: ObjectId('65dc6241af5d8a73d041b715'),
+    name: 'Sonu Kushwaha',
+    ip: '127.0.0.1',
+    LastLoginTime: 23456787654
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  },
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b717'),
+    name: 'Shubhum',
+    hobby: 'Singing'
+  }
+]
+newdb> db.students.find({name : 'Sonu'});
+[
+  {
+    _id: ObjectId('65dc635baf5d8a73d041b716'),
+    name: 'Sonu',
+    ip: '121.23.45.96'
+  }
+]
